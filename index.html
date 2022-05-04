@@ -9,6 +9,34 @@
 </head>
 <body>
     <header class="header">
+        <div class="burger">
+            <div class="burger__img">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+            </div>
+            <div class="burger__nav">
+                <ul class="nav__list menu__box">
+                    <li><a href="#" class="menu__item">Home</a></li>
+                </ul>
+                <ul class="nav__list menu__box">
+                    <li><a href="#" class="menu__item">About me</a></li>
+                </ul>
+                <ul class="nav__list menu__box">
+                    <li><a href="#" class="menu__item">Skills</a></li>
+                </ul>
+                <ul class="nav__list menu__box">
+                    <li><a href="#" class="menu__item">Portfolio</a></li>
+                </ul>
+                <ul class="nav__list menu__box">
+                    <li><a href="#" class="menu__item">Contacts</a></li>
+                </ul>
+                <div class="logo__vertical menu__box">
+                    <p><a href="#" class="menu__item">RU</a>|<a href="#" class="menu__item">ENG</a></p>
+                </div>
+            </div>
+        </div>
         <nav class="nav">
             <ul class="nav__list">
                 <li><a href="#">Home</a></li>
@@ -39,7 +67,10 @@
             </div>
         </div>
         <div class="header__img">
-            <img src="./assets/img/man.png" alt="man">
+            <picture>
+                <source srcset="./assets/img/man_300.png" media="(max-width:768px)">
+                <img src="./assets/img/man.png" alt="">
+            </picture>
         </div>
     </header>
     <main>
